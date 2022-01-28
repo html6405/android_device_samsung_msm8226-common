@@ -6,6 +6,7 @@ allow system_app sysfs_mdnie:file rw_file_perms;
 allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+allow system_app hal_light_default:binder call;
 
 dontaudit system_app {
   apex_service
