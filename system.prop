@@ -54,3 +54,6 @@ ril.subscription.types=NV,RUIM
 
 # Time
 persist.timed.enable=true
+
+# Bpf
+ro.kernel.ebpf.supported=false
