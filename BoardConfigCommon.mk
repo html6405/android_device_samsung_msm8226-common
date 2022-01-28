@@ -16,6 +16,9 @@
 # inherit from qcom-common
 include device/samsung/qcom-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
