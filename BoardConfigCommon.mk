@@ -119,6 +119,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 # VNDK - Dedupe VNDK libraries with identical core variants.
 TARGET_VNDK_USE_CORE_VARIANT := true
 
+# VNDK VERSION
+BOARD_VNDK_VERSION := current
+
 # Wifi
 BOARD_WLAN_DEVICE                := qcwcn
 BOARD_HAS_QCOM_WLAN              := true
