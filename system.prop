@@ -27,6 +27,7 @@ debug.egl.hw=1
 debug.composition.type=c2d
 debug.disable.bwc=1
 dev.pm.dyn_samplingrate=1
+debug.renderengine.backend=gles
 
 # fastbootd
 ro.fastbootd.available=true
