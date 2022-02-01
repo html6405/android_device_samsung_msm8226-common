@@ -673,7 +673,7 @@ service thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-
    socket thermal-recv-passive-client stream 0666 system system
    group root   
 
-service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service.legacy
+service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service-lazy.legacy
     override
     interface android.hardware.wifi@1.0::IWifi default
     interface android.hardware.wifi@1.1::IWifi default
