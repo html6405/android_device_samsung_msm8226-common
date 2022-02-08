@@ -27,3 +27,9 @@ allow system_server hal_light_default:process signal;
 get_prop(system_server, userspace_reboot_exported_prop);
 get_prop(system_server, userspace_reboot_config_prop);
 get_prop(system_server, exported_camera_prop);
+
+allow system_server build_bootimage_prop:file { getattr open read };
+allow system_server vendor_default_prop:file read;
+allow system_server init:binder { call transfer };
+allow system_server vendor_default_prop:file open;
+allow system_server vendor_default_prop:file getattr;

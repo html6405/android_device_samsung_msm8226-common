@@ -5,3 +5,7 @@ allow thermal-engine sysfs_batteryinfo:dir search;
 allow thermal-engine sysfs_batteryinfo:file r_file_perms;
 
 allow thermal-engine self:capability chown;
+
+allow thermal-engine default_prop:file read;
+allow thermal-engine default_prop:file open;
+allow thermal-engine default_prop:file getattr;

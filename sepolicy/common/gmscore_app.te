@@ -1,0 +1,1 @@
+allow gmscore_app sysfs_ausb:file { getattr open read };

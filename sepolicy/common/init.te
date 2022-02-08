@@ -2,6 +2,17 @@ allow init efs_file:dir mounton;
 allow init cpuset_device:file create_file_perms;
 allow init sysfs_ausb:file rw_file_perms;
 allow init sysfs_vibamp:file r_file_perms;
+allow init proc:file write;
+
+allow init hal_wifi_hwservice:hwservice_manager { add find };
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init self:netlink_generic_socket { bind create getattr read setopt write };
+allow init self:netlink_socket { bind create getattr read setopt };
+allow init sysfs_wifi_writeable:file { open write };
+allow init system_server:binder { call transfer };
+allow init vendor_file:file execute_no_trans;
+
 
 allow init {
     sysfs_ausb

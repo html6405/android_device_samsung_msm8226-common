@@ -24,3 +24,17 @@ allow vendor_init cpuset_device:file create_file_perms;
 # This causes a mobile data slowdown after several hours of 
 # usage on enforcing builds, for certain reasons.
 dontaudit vendor_init wcnss_device:chr_file { open write };
+
+allow vendor_init default_prop:file read;
+allow vendor_init default_prop:property_service set;
+# allow vendor_init init_service_status_private_prop:file read;
+allow vendor_init init_service_status_prop:property_service set;
+allow vendor_init radio_data_file:dir search;
+allow vendor_init system_prop:file read;
+allow vendor_init vendor_mpctl_prop:property_service set;
+allow vendor_init radio_data_file:dir { add_name write };
+allow vendor_init system_prop:file open;
+allow vendor_init system_prop:property_service set;
+allow vendor_init radio_data_file:dir { getattr remove_name };
+allow vendor_init system_prop:file getattr;
+allow vendor_init radio_data_file:dir rmdir;

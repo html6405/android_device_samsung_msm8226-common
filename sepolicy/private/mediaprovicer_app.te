@@ -1,0 +1,2 @@
+allow mediaprovider_app media_rw_data_file:lnk_file setattr;
+allow mediaprovider_app sdcardfs:lnk_file getattr;
