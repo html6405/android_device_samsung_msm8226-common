@@ -40,7 +40,7 @@
 /firmware-modem                                         u:object_r:firmware_file:s0
 /tombstones                                             u:object_r:rootfs:s0
 /persist                                                u:object_r:persist_file:s0
- 
+
 # sockets
 /data/cam_socket2                                       u:object_r:camera_socket:s0
 /data/cam_socket3                                       u:object_r:camera_socket:s0
@@ -142,3 +142,7 @@
 
 # sysfs - wifi
 /sys/module/wlan/parameters/fwpath                      u:object_r:sysfs_wifi_writeable:s0
+
+# radio
+/data/data/com.android.providers.telephony/databases(/.*)?       u:object_r:radio_core_data_file:s0
+/data/data/com.android.providers.telephony/shared_prefs(/.*)?    u:object_r:radio_core_data_file:s0
