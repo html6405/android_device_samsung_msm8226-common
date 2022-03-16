@@ -85,6 +85,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 # Kernel
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true
