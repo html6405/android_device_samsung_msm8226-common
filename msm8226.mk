@@ -174,6 +174,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 # Preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
