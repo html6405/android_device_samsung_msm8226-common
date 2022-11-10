@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.audio.service \
     audio.a2dp.default \
     audio.primary.msm8226 \
@@ -86,9 +85,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \
     camera.msm8226 \
-    libxml2 \
-    Snap
-
+    libxml2
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -181,7 +178,6 @@ PRODUCT_PACKAGES += \
 # Preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    Snap \
     SystemUI \
     TrebuchetQuickStep
 
@@ -230,7 +226,6 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.legacy \
-    dhcpcd.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf \
