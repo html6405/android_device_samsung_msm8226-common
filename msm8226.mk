@@ -229,7 +229,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf \
-    libwpa_client
+    libwpa_client \
+    android.hardware.wifi.supplicant-V1-ndk
 
 PRODUCT_PACKAGES += \
     libcurl \
