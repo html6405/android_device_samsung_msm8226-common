@@ -8,6 +8,9 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 allow system_app hal_light_default:binder call;
 
+allow system_app hal_power_default:binder call;
+allow system_app hal_wifi_supplicant_default:binder call;
+
 dontaudit system_app {
   apex_service
   system_suspend_control_service
