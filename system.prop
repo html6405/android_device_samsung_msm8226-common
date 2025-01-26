@@ -57,7 +57,7 @@ ril.subscription.types=NV,RUIM
 persist.timed.enable=true
 
 # Bpf
-ro.kernel.ebpf.supported=false
+bpf.progs_loaded=1
 
 # Bluetooth
 bluetooth.device.class_of_device?=90,2,12
