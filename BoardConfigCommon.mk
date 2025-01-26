@@ -40,9 +40,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Bionic
 MALLOC_SVELTE := true
 
-# Binder API version
-TARGET_USES_64_BIT_BINDER := true
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
