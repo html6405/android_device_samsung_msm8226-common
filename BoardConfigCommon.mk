@@ -110,6 +110,7 @@ TARGET_SYSTEM_PROP += device/samsung/msm8226-common/system.prop
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += device/samsung/msm8226-common
+BOARD_NO_RECOVERY_PATCH := true
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
