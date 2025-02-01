@@ -72,6 +72,11 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# CPUSETS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/cpuset.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/cpuset.sh \
+    $(LOCAL_PATH)/configs/cpuset.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cpuset.sh
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \

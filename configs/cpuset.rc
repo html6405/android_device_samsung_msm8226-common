@@ -1,0 +1,3 @@
+service cpusets /vendor/bin/hw/cpuset.sh
+    class main
+    oneshot
