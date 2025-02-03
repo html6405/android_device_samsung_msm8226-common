@@ -1,0 +1,9 @@
+allow untrusted_app vendor_file:file { getattr read };
+allow untrusted_app proc_tty_drivers:file open;
+allow untrusted_app apex_info_file:file getattr;
+allow untrusted_app build_attestation_prop:file read;
+allow untrusted_app proc_tty_drivers:file open;
+allow untrusted_app vendor_file:file open;
+allow untrusted_app proc_tty_drivers:file read;
+allow untrusted_app proc_tty_drivers:file getattr;
+allow untrusted_app vendor_file:file { execute getattr open read execute };

@@ -1,0 +1,1 @@
+allow derive_sdk vendor_file:file { read getattr };

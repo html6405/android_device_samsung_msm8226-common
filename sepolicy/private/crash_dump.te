@@ -1,0 +1,2 @@
+allow crash_dump resourcecache_data_file:file { getattr open read };
+allow crash_dump nfc_data_file:file { open read getattr };

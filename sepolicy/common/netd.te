@@ -1,1 +1,2 @@
 allow system_app netd:binder call; 
+allow netd vendor_file:file { getattr read };

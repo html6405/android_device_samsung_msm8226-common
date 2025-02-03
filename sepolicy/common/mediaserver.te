@@ -6,7 +6,7 @@ allow mediaserver hal_lineage_camera_motor_hwservice:hwservice_manager find;
 allow mediaserver vendor_default_prop:file read;
 allow mediaserver hal_camera_default:binder call;
 allow mediaserver vendor_default_prop:file { getattr open };
-
+allow mediaserver vendor_file:file { execute getattr open read };
 allow mediaserver cameraproxy_service:service_manager find;
 allow mediaserver cameraserver_service:service_manager add;
 allow mediaserver fwk_camera_hwservice:hwservice_manager find;

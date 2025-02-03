@@ -38,5 +38,7 @@ allow vendor_init system_prop:property_service set;
 allow vendor_init radio_data_file:dir { getattr remove_name };
 allow vendor_init system_prop:file getattr;
 allow vendor_init radio_data_file:dir rmdir;
-
 allow vendor_init radio_core_data_file:lnk_file { create getattr relabelfrom unlink };
+allow vendor_init radio_core_data_file:dir { add_name search getattr setattr write add_name create };
+allow vendor_init system_userdir_file:dir search;
+

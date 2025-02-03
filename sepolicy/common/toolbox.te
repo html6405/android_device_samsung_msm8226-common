@@ -1,3 +1,4 @@
 allow toolbox platform_app:dir { open read };
 allow toolbox proc_last_kmsg:file getattr;
 allow toolbox shell:dir { open read };
+allow toolbox vendor_file:file { getattr read };

@@ -1,5 +1,6 @@
 allow surfaceflinger sysfs_graphics:file r_file_perms;
 allow surfaceflinger default_android_service:service_manager { add find };
 allow surfaceflinger cpuset_device:dir search;
-
+allow surfaceflinger sysfs_graphics:dir search;
+allow surfaceflinger vendor_file:file { execute getattr open read };
 allow surfaceflinger vendor_default_prop:file { getattr open };

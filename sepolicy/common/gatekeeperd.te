@@ -1,0 +1,2 @@
+#============= gatekeeperd ==============
+allow gatekeeperd vendor_file:file { getattr read };

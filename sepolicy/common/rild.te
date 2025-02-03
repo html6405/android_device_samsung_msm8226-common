@@ -19,3 +19,6 @@ allow rild system_prop:file { getattr open read };
 allow rild vendor_rild_libpath_prop:file read;
 allow rild vendor_rild_libpath_prop:file open;
 allow rild vendor_rild_libpath_prop:file getattr;
+allow rild radio_core_data_file:dir { add_name getattr remove_name write };
+allow rild radio_core_data_file:file { create open read setattr unlink write };
+allow rild system_data_file:dir getattr;

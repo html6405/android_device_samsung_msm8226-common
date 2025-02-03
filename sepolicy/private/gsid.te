@@ -1,0 +1,1 @@
+allow gsid vendor_file:file { read getattr };

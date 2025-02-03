@@ -33,3 +33,8 @@ allow system_server vendor_default_prop:file read;
 allow system_server init:binder { call transfer };
 allow system_server vendor_default_prop:file open;
 allow system_server vendor_default_prop:file getattr;
+allow system_server sysfs_ausb:file { getattr read };
+allow system_server sysfs_leds:file { getattr open read };
+allow system_server sysfs_vibamp:file read;
+allow system_server vendor_file:file { execute getattr open read };
+allow system_server fs_bpf_tethering:dir search;

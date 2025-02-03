@@ -11,7 +11,7 @@ allow init self:netlink_generic_socket { bind create getattr read setopt write }
 allow init self:netlink_socket { bind create getattr read setopt };
 allow init sysfs_wifi_writeable:file { open write };
 allow init system_server:binder { call transfer };
-allow init vendor_file:file execute_no_trans;
+allow init vendor_file:file { execute_no_trans execute };
 
 allow init audio_device:chr_file { ioctl open read write };
 allow init audioserver:binder transfer;
@@ -22,7 +22,8 @@ allow init hal_audio_hwservice:hwservice_manager { add find };
 allow init ion_device:chr_file { ioctl open read };
 allow init sysfs:file { open write };
 allow init vndbinder_device:chr_file { ioctl open read write };
-
+allow init default_android_hwservice:hwservice_manager { add find };
+allow init hal_usb_hwservice:hwservice_manager { add find };
 
 allow init {
     sysfs_ausb
